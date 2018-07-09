@@ -2,10 +2,10 @@
 
 ___
 
-Os injection is a vulnurebility seen in the websites that execute the system commands via web interface. Os command injection spoils the whole control access model of the website and the attacker gains the complete access over the website. With this ability attacker steals passwords and any other important filesof the web site.
+OS injection is a vulnerability seen in the websites that execute the system commands via web interface. OS command injection spoils the whole control access model of the website and the attacker gains the complete access over the website. With this ability attacker steals passwords and any other important filesof the web site.
 
 ### Possible Injection Points
-* GET : url's
+* GET : urls
 * POST : input via post method
 * HTTP headers : cookies, x-forward-for, user-agent, referrer .....
         These are some possible places worth checking for injection.
@@ -22,7 +22,7 @@ we can give some command like ls to see what all files are there in the working 
 ```sh
 https://example.com/sample.php/?search=security;ls 
 ```
-If there are any filters which does not allow the use of semi colon then other operators like & can be used.
+If there are any filters which does not allow the use of semi colon then other operators like '&' can be used.
 
 #### Some other useful operators
 | Operator | Use |
